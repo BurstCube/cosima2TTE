@@ -1,0 +1,16 @@
+Version 1
+Geometry geo/BurstCube.geo.setup 
+PhysicsListEM Livermore
+StoreSimulationInfo False
+
+Run FFPS
+FFPS.Filename sim/bkg
+FFPS.Time 10
+
+# Approx CXB
+# https://www.aanda.org/articles/aa/pdf/2010/04/aa13072-09.pdf
+FFPS.Source bkg
+bkg.ParticleType 1
+bkg.Beam FarFieldAreaSource 0.0 180.0 0.0 360.0
+bkg.Spectrum PowerLaw 10 10000 2.42
+bkg.Flux 0.5

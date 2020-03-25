@@ -1,0 +1,14 @@
+Version 1
+Geometry geo/BurstCube.geo.setup 
+PhysicsListEM Livermore
+StoreSimulationInfo False
+
+Run FFPS
+FFPS.Filename sim/signal
+FFPS.Time 1
+
+FFPS.Source signal
+signal.ParticleType 1
+signal.Beam FarfieldPointSource 20 0.0
+signal.Spectrum PowerLaw 10 10000 1.5
+signal.Flux 2.0
