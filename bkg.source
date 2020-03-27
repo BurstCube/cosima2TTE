@@ -13,4 +13,4 @@ FFPS.Source bkg
 bkg.ParticleType 1
 bkg.Beam FarFieldAreaSource 0.0 180.0 0.0 360.0
 bkg.Spectrum PowerLaw 10 10000 2.42
-bkg.Flux 0.5
+bkg.Flux 25
